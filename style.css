@@ -67,16 +67,16 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link, .btn {
 }
 
 .hero-desktop {
-    background-image: url("https://blog.sensomx.com/wp-content/uploads/2020/05/oficina-agencia-de-marketing.jpg");
+    background-image: url("fondo.jpg");
 }
 
 .hero-mobile {
-    background-image: url("https://blog.sensomx.com/wp-content/uploads/2020/05/oficina-agencia-de-marketing.jpg");
+    background-image: url("fondo.jpg");
 }
 
 @media (max-width: 768px) {
     .hero-section {
-        background-image: url("https://blog.sensomx.com/wp-content/uploads/2020/05/oficina-agencia-de-marketing.jpg");
+        background-image: url("fondo.jpg");
     }
 
     .carousel-img-container {
