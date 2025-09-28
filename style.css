@@ -67,16 +67,16 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link, .btn {
 }
 
 .hero-desktop {
-    background-image: url("img/fondo.webp");
+    background-image: url("fondo.webp");
 }
 
 .hero-mobile {
-    background-image: url('img/fondo.webp');
+    background-image: url('fondo.webp');
 }
 
 @media (max-width: 768px) {
     .hero-section {
-        background-image: url('img/fondo.webp');
+        background-image: url("fondo.webp");
     }
 
     .carousel-img-container {
