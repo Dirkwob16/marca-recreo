@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recreo - Agencia de Marketing Estratégico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">RECREO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portafolio">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-section hero-desktop text-white text-center d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-4" id="slogan"></h1>
+            <a href="#contacto" class="btn btn-primary btn-lg mt-3">Agenda tu Asesoría Gratuita</a>
+        </div>
+    </header>
+
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Branding</h3>
+                            <p class="card-text">Construimos identidades de marca con visión y estrategia creativa.</p>
+                            <button class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#branding-detalle">Ver más</button>
+                            <div id="branding-detalle" class="collapse mt-3">
+                                <h5>Entregables:</h5>
+                                <ul>
+                                    <li>Manual de Marca Completo</li>
+                                    <li>Diseño de Producto</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Social Media</h3>
+                            <p class="card-text">Transformamos la presencia digital de marcas a través de la gestión completa de sus redes sociales.</p>
+                            <button class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#social-media-detalle">Ver más</button>
+                            <div id="social-media-detalle" class="collapse mt-3">
+                                <h5>Gestión Integral:</h5>
+                                <ul>
+                                    <li>Estrategia de Contenidos</li>
+                                    <li>Gestión de Redes</li>
+                                    <li>Creación de Contenido</li>
+                                    <li>Métricas e Informes</li>
+                                    <li>Campañas de Publicidad</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Asesorías</h3>
+                            <p class="card-text">Definimos junto al cliente la identidad, estrategia y hoja de ruta para que pueda gestionar su propia marca.</p>
+                            <button class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#asesorias-detalle">Ver más</button>
+                            <div id="asesorias-detalle" class="collapse mt-3">
+                                <h5>Áreas de Consultoría:</h5>
+                                <ul>
+                                    <li>Branding e Identidad Visual</li>
+                                    <li>Creación de Contenido</li>
+                                    <li>Marketing Digital</li>
+                                    <li>Campañas en Social Media ADS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portafolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Branding Showcase</h2>
+            <div id="brandingCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center g-0">
+                            <div class="col-md-6 carousel-img-container">
+                                <img src="img/shortbykenzo.jpg" style = "max-width: 300px;" class="d-block w-100" alt="Short by Kenzo">
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Short by Kenzo</h3>
+                                <p>Crear una identidad visual va mucho más allá de diseñar un logo; es capturar la esencia de una marca y convertirla en una experiencia conceptual, en este proyecto exploramos la pureza del minimalismo y la frescura; desde la tipografía hasta la composición visual, hemos logrado construir una presencia que hable por sí sola.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center g-0">
+                            <div class="col-md-6 carousel-img-container">
+                                <img src="img/florez&ulloa.jpg" style = "max-width: 300px;" class="d-block w-100" alt="Flores & Ullua inmobiliaria">
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Flores & Ullua inmobiliaria</h3>
+                                <p>Desde el inicio, nuestro objetivo fue crear una marca que reflejara sus valores fundamentales: confianza, profesionalismo y la capacidad de conectar a las personas con espacios llenos de esencia y significado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center g-0">
+                            <div class="col-md-6 carousel-img-container">
+                                <img src="img/inkapalki.png" style = "max-width: 300px;" class="d-block w-100" alt="InkaPalki">
+                            </div>
+                            <div class="col-md-6">
+                                <h3>InkaPalki</h3>
+                                <p>Esta identidad visual creada para @frank_egoavil dueño de Inka Palki, honra sus raíces y proyecta su esencia al futuro; mientras construimos un puente entre tradición y modernidad para que la marca hable antes que las palabras</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#brandingCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#brandingCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Sobre RECREO</h2>
+                    <p>Somos un equipo de estrategas y creativos apasionados por construir marcas que conectan y venden. Nuestra filosofía es simple: estrategia primero, diseño después.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/equipo.jfif" class="img-fluid rounded-circle" alt="Equipo de Recreo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Agenda tu Asesoría Gratuita</h2>
+            <form class="col-md-6 mx-auto">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Tu Nombre" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Tu Correo Electrónico" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="5" placeholder="Cuéntanos sobre tu proyecto"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p>Diseño creado por Angel Amezcua. Distribución no autorizada</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --primary-color: #0A2540;
+    --secondary-color: #00C49A;
+    --background-color: #F5F7FA;
+    --text-color: #333333;
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--secondary-color);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-link, .btn {
+    font-family: var(--heading-font);
+}
+
+.navbar {
+    background-color: white !important;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-desktop {
+    background-image: url("img/fondo.webp");
+}
+
+.hero-mobile {
+    background-image: url('img/fondo.webp');
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        background-image: url('img/fondo.webp');
+    }
+
+    .carousel-img-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: #00a281;
+    border-color: #00a281;
+}
+
+.btn-secondary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+#servicios .card {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+#servicios .card:hover {
+    transform: translateY(-5px);
+}
+
+#portafolio .carousel-item h3 {
+    color: var(--primary-color);
+}
+
+#portafolio .carousel-control-prev-icon,
+#portafolio .carousel-control-next-icon {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
